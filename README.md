@@ -24,18 +24,18 @@
 
 ## HOW TO INSTALL SPICETIFY
 
-- There are several ways to do it but I suggest using this  
+**Make sure Spotify is installed via Desktop, NOT Microsoft store**
 
-- Open **PowerShell** *(regularly without admin)*  
+- Open Powershell 
 
 - Run the following command:  
 ```
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/main/install.ps1 | iex
 ```
 
-- Enter **y** when prompted and hit enter to install the marketplace too  
+- Install Marketplace by using `y` when prompted
 
-- Then run:  
+- Run backup & patch command:
 ```
 spicetify backup apply
 ```
