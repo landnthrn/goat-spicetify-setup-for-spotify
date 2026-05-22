@@ -2,11 +2,11 @@
 
 ![Modified StarryNight PREVIEW](https://github.com/user-attachments/assets/3c9c4c33-d704-45e3-803e-3aaff9734bf5)
 
-### ENJOY A BETTER SPOTIFY WITH THIS SPICETIFY SETUP!!
+# ENJOY A BETTER SPOTIFY WITH THIS SPICETIFY SETUP!!
 
 ---
 
-## IMPORTANT NOTES
+### IMPORTANT NOTES
 
 - Use all the commands listed in this guide in PowerShell *(no admin needed)*
 
@@ -18,9 +18,9 @@
 
 ### HOW TO INSTALL SPICETIFY
 
-**Make sure [Spotify](https://www.spotify.com/ca-en/download/windows/) is installed via Desktop, NOT Microsoft store**
+- Make sure Spotify is installed via Desktop, NOT Microsoft store
 
-- Open PowerShell
+- Once Spotify is installed & your signed in, open PowerShell
 
 - Run the following command:
 
@@ -28,7 +28,7 @@
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/main/install.ps1 | iex
 ```
 
-- Install Marketplace by using `y` when prompted
+- Install Marketplace as well by using `y` when prompted
 
 - Run backup:
 
@@ -42,9 +42,19 @@ You can also check out their page:
 
 ---
 
+### HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
+
+- Select the gear icon **Spicetify Marketplace**
+
+- Under **Backup/Restore**, press **Open > Import From File**
+
+- Select a setting in `Settings to Import` folder provided in this repo download
+
+---
+
 ### HOW TO APPLY THEMES
 
-- Move or copy the folders inside **My Modified Themes** into this location:
+- Copy or move the folders inside **My Modified Themes** into this location:
 
 ```text
 C:\Users\%USERNAME%\AppData\Local\spicetify\Themes
@@ -57,55 +67,14 @@ spicetify config current_theme <nameofthemefolder>
 spicetify apply
 ```
 
-For themes that come with more than one color scheme like Starrynight, you should specifiy it in the apply command. My modified Starrynight purple colorway uses color scheme `Base`, so use the following:
+For themes that come with more than one color scheme like Starrynight, you should specifiy it in the apply command  
+My modified Starrynight purple colorway uses color scheme `Base`, so use the following:
 
 ```powershell
 spicetify config current_theme Starrynight
 spicetify config color_scheme base
 spicetify apply
 ```
-
----
-
-### HOW TO INSTALL CUSTOM LOCAL FILE EXTENSIONS
-*Use `Appdata\Roaming` locations for Custom Apps & Extensions, not `Appdata\Local`*
-
-- Run command:
-
-```powershell
-spicetify config extensions <nameofextensionfile.itsformat>
-```
-
----
-
-### HOW TO INSTALL CUSTOM LOCAL FILE APPS
-*Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
-
-- Place the custom app folder or file into this location:
-
-```text
-C:\Users\%USERNAME%\AppData\Roaming\spicetify\CustomApps
-```
-
-- Run command:
-
-```powershell
-spicetify config custom_apps <nameofcustomappfolderorfile>
-```
-
----
-
-### HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
-
-- Open Spotify
-
-- Click the shopping cart *(Marketplace Icon)*
-
-- Select the gear icon **Spicetify Settings**
-
-- Under **Backup/Restore**, press **Open > Import From File**
-
-- Select a setting in `Settings to Import` folder provided in this repo download
 
 ---
 
@@ -125,19 +94,60 @@ spicetify config custom_apps <nameofcustomappfolderorfile>
 
 ---
 
-## NOTES
+### HOW TO INSTALL EXTERNAL EXTENIONS & CUSTOM APPS
+
+*The Marketplace offers many of the best, and makes them easy to install  
+Plenty more can be found outside the marketplace, here's how those are installed*
+
+*Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
+
+---
+
+#### EXTENSIONS
+
+- Place an Extension into this location:
+
+```text
+C:\Users\%USERNAME%\AppData\Roaming\spicetify\Extensions
+```
+
+- Run command:
+
+```powershell
+spicetify config extensions <nameofextensionfile.itsformat>
+```
+
+---
+
+#### CUSTOM APPS
+
+- Place the custom app folder or file into this location:
+
+```text
+C:\Users\%USERNAME%\AppData\Roaming\spicetify\CustomApps
+```
+
+- Run command:
+
+```powershell
+spicetify config custom_apps <nameofcustomappfolderorfile>
+```
+
+---
+
+### NOTES
 
 - Recommend to join the [Spicetify Discord](https://discord.com/invite/spicetify-842219447716151306)
 
 - Spicetify usually needs to be updated whenever Spotify does, whenever Spicetify developers release an update use `spicetify update` then `spicetify apply`
 
-- There is also a `Spicetify Commands.txt` included in this pack if you ever need
+- There is also a `Spicetify Commands.txt` included in this repo download if you ever need
 
-- This setup is just my personal favourite after having gone through everything like 20 times lol, enjoy!
+- This setup is just my personal favourite after having gone through everything like 10 times lol, enjoy!
 
 ---
 
-## CREDITS
+### CREDITS
 
 ### [Spicetify Website](https://spicetify.app)
 
