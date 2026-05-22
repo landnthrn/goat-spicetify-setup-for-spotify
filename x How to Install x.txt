@@ -16,14 +16,14 @@ IMPORTANT NOTES
 
 HOW TO INSTALL SPICETIFY
 
-- Make sure Spotify is installed via Desktop, NOT Microsoft store
+— Make sure Spotify is installed via Desktop, NOT Microsoft store
 
-— Open PowerShell
+— Once Spotify is installed & your signed in, open PowerShell
 
-— Run the following command:  
+— Run the following command: 
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/main/install.ps1 | iex  
 
-— Install Marketplace by using `y` when prompted
+— Install Marketplace as well by using `y` when prompted
 
 — Run backup:  
 spicetify backup apply  
@@ -35,9 +35,19 @@ https://spicetify.app/docs/advanced-usage/installation
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
+
+— Select the gear icon Spicetify Marketplace
+
+— Under Backup/Restore, press Open > Import From File  
+
+— Select a setting in `Settings to Import` folder provided in this repo download
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 HOW TO APPLY THEMES
 
-— Move or copy the folders inside My Modified Themes into this location:  
+— Copy or move the folders inside My Modified Themes into this location:  
   C:\Users\%USERNAME%\AppData\Local\spicetify\Themes  
 
 — Run command:  
@@ -45,44 +55,11 @@ spicetify config current_theme <nameofthemefolder>
 spicetify apply  
 
 For themes that come with more than one color scheme like Starrynight, you should specifiy it in the apply command. 
-My modified Starrynight purple colorway uses color scheme Base, so use the following:
+My modified Starrynight purple colorway uses color scheme `Base`, so use the following:
 
 spicetify config current_theme Starrynight 
 spicetify config color_scheme base
 spicetify apply
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-HOW TO INSTALL CUSTOM LOCAL FILE EXTENSIONS
-*Use Appdata\Roaming locations for Custom Apps & Extensions, not Appdata\Local*
-
-- Run command: 
-  spicetify config extensions <nameofextensionfile.itsformat>
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-HOW TO INSTALL CUSTOM LOCAL FILE APPS
-*Use Appdata\Roaming locations for local file Custom Apps & Extensions, not Appdata\Local*
-
-— Place the custom app folder or file into this location:  
-  C:\Users\%USERNAME%\AppData\Roaming\spicetify\CustomApps  
-
-— Run command: 
-  spicetify config custom_apps <nameofcustomappfolderorfile>
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
-
-— Open Spotify  
-
-— Click the shopping cart (Marketplace Icon)  
-
-— Select the gear icon Spicetify Settings  
-
-— Under Backup/Restore, press Open > Import From File  
-
-— Select a setting in `Settings to Import` folder provided in this repo download
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -102,6 +79,35 @@ IF USING THE LUCID THEME — HOW TO APPLY MY LUCID THEME SETTINGS
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+HOW TO INSTALL EXTERNAL EXTENIONS & CUSTOM APPS:
+
+*The Marketplace offers many of the best, and makes them easy to install. 
+Plenty more can be found outside the marketplace, here's how those are installed.*
+
+*Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
+
+~~~~~~~~~~
+
+EXTENSIONS:
+
+— Place an Extension into this location:
+  C:\Users\%USERNAME%\AppData\Roaming\spicetify\CustomApps
+
+— Run command: 
+spicetify config extensions <nameofextensionfile.itsformat>
+
+~~~~~~~~~~
+
+CUSTOM APPS:
+
+— Place the custom app folder or file into this location:  
+  C:\Users\%USERNAME%\AppData\Roaming\spicetify\CustomApps  
+
+— Run command: 
+spicetify config custom_apps <nameofcustomappfolderorfile>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 NOTES
 
 — Recommend to join the Spicetify Discord:  
@@ -110,9 +116,9 @@ NOTES
 — Spicetify usually needs to be updated whenever Spotify does, 
   whenever Spicetify developers release an update use `spicetify update` then `spicetify apply`
 
-— There is also a Spicetify Commands.txt included in this pack if you ever need  
+— There is also a `Spicetify Commands.txt` included in this repo download if you ever need  
 
-— This setup is just my personal favourite after having gone through everything like 20 times lol, enjoy!
+— This setup is just my personal favourite after having gone through everything like 10 times lol, enjoy!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
