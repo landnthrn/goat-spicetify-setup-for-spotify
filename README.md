@@ -1,164 +1,155 @@
-
 ![Modified Lucid PREVIEW](https://github.com/user-attachments/assets/34ca3d1a-20ab-4f71-9aa8-0a3d6cd28206)
 
 ![Modified StarryNight PREVIEW](https://github.com/user-attachments/assets/3c9c4c33-d704-45e3-803e-3aaff9734bf5)
 
-
-# Enjoy a better Spotify with this Spicetify setup!!
-
-**Simple setup guide included of course** 
-
-
-# HOW TO IMPLEMENT THIS SPICETIFY SETUP
-
-
-## IMPORTANT NOTES
-
-- Use all the commands listed in this guide in **PowerShell** *(no admin needed)*  
-
-- FYI the `zoomTheme.js` extension is just for the SpotifyDarkPurp Theme  
+### ENJOY A BETTER SPOTIFY WITH THIS SPICETIFY SETUP!!
 
 ---
 
-## HOW TO INSTALL SPICETIFY
+## IMPORTANT NOTES
+
+- Use all the commands listed in this guide in PowerShell *(no admin needed)*
+
+- In commands provided, make sure to replace `<noteslikethis>` for what they state
+
+- The `zoomTheme.js` extension is just for the SpotifyDarkPurp Theme
+
+---
+
+### HOW TO INSTALL SPICETIFY
 
 **Make sure [Spotify](https://www.spotify.com/ca-en/download/windows/) is installed via Desktop, NOT Microsoft store**
 
-- Open Powershell 
+- Open PowerShell
 
-- Run the following command:  
-```
+- Run the following command:
+
+```powershell
 iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/main/install.ps1 | iex
 ```
 
 - Install Marketplace by using `y` when prompted
 
-- Run backup & patch command:
-```
+- Run backup:
+
+```powershell
 spicetify backup apply
 ```
-You can also check out their page [Spicetify Installation Guide + Info](https://spicetify.app/docs/advanced-usage/installation)
+
+You can also check out their page:
+
+### [Spicetify Installation Guide + Info](https://spicetify.app/docs/advanced-usage/installation)
 
 ---
 
-## HOW TO APPLY THEMES
+### HOW TO APPLY THEMES
 
-- Move or copy the folders inside **My Modified Themes** into this location:  
-```
+- Move or copy the folders inside **My Modified Themes** into this location:
+
+```text
 C:\Users\%USERNAME%\AppData\Local\spicetify\Themes
 ```
 
-- Then run:  
-```
-spicetify config current_theme <nameofthemefolder>  
+- Run command:
+
+```powershell
+spicetify config current_theme <nameofthemefolder>
 spicetify apply
 ```
 
-- For themes that come with more than one color scheme like Starrynight, you should specifiy it in the apply command.
-  My modified Starrynight purple colorway uses color scheme `Base` so use the following:
+For themes that come with more than one color scheme like Starrynight, you should specifiy it in the apply command. My modified Starrynight purple colorway uses color scheme `Base`, so use the following:
 
-```
-spicetify config current_theme Starrynight 
+```powershell
+spicetify config current_theme Starrynight
 spicetify config color_scheme base
 spicetify apply
 ```
 
 ---
 
-## HOW TO INSTALL `waveform.js` *(CUSTOM LOCAL FILE EXTENSIONS)*
-*Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
+### HOW TO INSTALL CUSTOM LOCAL FILE EXTENSIONS
+*Use `Appdata\Roaming` locations for Custom Apps & Extensions, not `Appdata\Local`*
 
+- Run command:
 
-The `waveform.js` extension is a custom extension from GitHub, it's no longer maintained and doesn't work. 
-There is another one like it in the Spicetify Marketplace, but it doesn't work on all themes.
-Sucks that there isn't a playing audio wave visualizer extension that's maintained, if you find a better one please [inform me on Discord!!](https://discordapp.com/users/831735011588964392)
-
-- Place the `spicetify-waveform` folder and the `waveform.js` file into this location:  
-```
-C:\Users\%USERNAME%\AppData\Roaming\spicetify\Extensions
-```
-
-- Then run:  
-```
-spicetify config extensions waveform.js
+```powershell
+spicetify config extensions <nameofextensionfile.itsformat>
 ```
 
 ---
 
-## HOW TO INSTALL `history-in-sidebar` *(CUSTOM LOCAL FILE APPS)*
+### HOW TO INSTALL CUSTOM LOCAL FILE APPS
 *Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
 
-- Place the `history-in-sidebar` folder into this location:  
-```
+- Place the custom app folder or file into this location:
+
+```text
 C:\Users\%USERNAME%\AppData\Roaming\spicetify\CustomApps
 ```
 
-- Then run:  
-```
-spicetify config custom_apps history-in-sidebar
+- Run command:
+
+```powershell
+spicetify config custom_apps <nameofcustomappfolderorfile>
 ```
 
 ---
 
-## HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
+### HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
 
-- Open Spotify  
+- Open Spotify
 
-- Click the shopping cart (Marketplace Icon)  
+- Click the shopping cart *(Marketplace Icon)*
 
-- Select the gear icon **Spicetify Settings**  
+- Select the gear icon **Spicetify Settings**
 
-- Under **Backup/Restore**, press **Open > Import From File**  
+- Under **Backup/Restore**, press **Open > Import From File**
 
-- Select the `marketplace-settings-2025-10-13T06_40_03.630Z.json` provided in this package  
-
-If for some reason it doesn't import correctly, use the `IMPORT FILE PREVIEW.png` to see which ones to get from what the import file has.
+- Select a setting in `Settings to Import` folder provided in this repo download
 
 ---
 
-## IF USING THE LUCID THEME — HOW TO APPLY MY LUCID THEME SETTINGS
+### IF USING THE LUCID THEME - HOW TO APPLY MY LUCID THEME SETTINGS
 
 - Once you have Lucid Theme applied, select the tiny gear icon at the top right of Spotify
 
-- In the top Settings navigation categories, scroll all the way to the right and select **Advanced**, or scroll all the way to the bottom  
+- Navigate to **Advanced** tab
 
-- Open the `My Lucid Theme Setup.json` with Notepad  
+- Open the `My Lucid Theme Setup.json` with Notepad
 
-- Press `Ctrl + A` to select all the contents and copy it  
+- Use `Ctrl + A` and copy all contents
 
-- Paste them into the **Import Configuration** section of Lucid’s Advanced Settings section  
+- Paste into the **Import Configuration** section of Lucid’s Advanced Settings section
 
-- You can customize the Lucid settings however you like from there :)  
+- You can customize the Lucid settings however you like from there :)
 
 ---
 
 ## NOTES
-- **Recommend to join the [Spicetify Discord](https://discord.com/invite/spicetify-842219447716151306)**
 
-- Once in a while you will have to use `spicetify apply` or `spicetify backup apply` or `spicetify update`
+- Recommend to join the [Spicetify Discord](https://discord.com/invite/spicetify-842219447716151306)
 
-- You can customize the Spicetify addons however you like in the marketplace  
+- Spicetify usually needs to be updated whenever Spotify does, whenever Spicetify developers release an update use `spicetify update` then `spicetify apply`
 
-- There is also a `Spicetify Commands.txt` included in this pack if you ever need  
+- There is also a `Spicetify Commands.txt` included in this pack if you ever need
 
-- This setup is just my personal favourite after having gone through everything like 20 times lol — enjoy  
-\- **landn.thrn**
+- This setup is just my personal favourite after having gone through everything like 20 times lol, enjoy!
 
 ---
 
-# CREDITS
+## CREDITS
 
-### [Spicetify Website](https://spicetify.app)  
-### [Spicetify GitHub](https://github.com/spicetify)
+### [Spicetify Website](https://spicetify.app)
 
+### [Spicetify Github](https://github.com/spicetify)
 
-### [Lucid Theme](https://projects.sanooj.uk/spicetify/lucid)  
+### [Lucid Theme](https://github.com/sanoojes/spicetify-lucid)
 
-### [StarryNight Theme](https://github.com/spicetify/spicetify-themes/tree/master/StarryNight)  
+### [StarryNight Theme](https://github.com/spicetify/spicetify-themes/tree/master/StarryNight)
 
-### [Waveform](https://github.com/SPOTLAB-Live/Spicetify-waveform)  
+### [History in Sidebar](https://github.com/Bergbok/Spicetify-Creations/blob/main/CustomApps/history-in-sidebar/README.md)
 
-### [History in Sidebar](https://github.com/Bergbok/Spicetify-Creations/blob/main/CustomApps/history-in-sidebar/README.md)   
+All developers of Extensions, Custom Apps, & Snippets inside the settings import are credited in the Marketplace
 
 ---
 
