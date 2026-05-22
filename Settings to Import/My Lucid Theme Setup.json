@@ -149,8 +149,8 @@
     "accessPoint": "nav",
     "isFloating": true,
     "floatingPosition": {
-      "x": 1254.99,
-      "y": 47.9942
+      "x": 1254.98,
+      "y": 47.9844
     }
   },
   "library": {
@@ -177,6 +177,6 @@
     "autoHide": false,
     "hoverTargetSize": 40
   },
-  "disableTippy": true,
+  "disableTippy": false,
   "isAnalyticsActive": true
 }
