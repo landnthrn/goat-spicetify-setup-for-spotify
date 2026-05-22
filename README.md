@@ -22,7 +22,7 @@
 
 ## HOW TO INSTALL SPICETIFY
 
-**Make sure Spotify is installed via Desktop, NOT Microsoft store**
+**Make sure [Spotify](https://www.spotify.com/ca-en/download/windows/) is installed via Desktop, NOT Microsoft store**
 
 - Open Powershell 
 
