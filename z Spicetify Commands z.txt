@@ -2,7 +2,32 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SPICETIFY COMMANDS
-\\POWERSHELL\\
+\\POWERSHELL\\ (no admin needed)
+
+~~~~~~~~~~~~~~~~~
+
+INSTALL SPICETIFY:
+iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
+
+(Install Marketplace by using `y` when prompted)
+
+Then run:
+
+spicetify backup apply
+
+~~~~~~~~~~~~~~~~~
+
+UNINSTALL SPICETIFY:
+spicetify restore backup apply
+
+Remove-Item "$env:APPDATA\spicetify" -Recurse -Force
+Remove-Item "$env:LOCALAPPDATA\spicetify" -Recurse -Force
+
+IF INSTALLED BY SCOOP:
+scoop uninstall spicetify
+
+TEST IF ITS GONE:
+spicetify
 
 ~~~~~~~~~~~~~~~~~
 
@@ -12,7 +37,7 @@ spicetify apply
 
 ~~~~~~~~~~~~~~~~~
 
-FORCE APPLY A COLOR SCHEME YOU MODIFIED:
+IF THEME COMES WITH MULTIPLE COLOR SCHEMES:
 spicetify config current_theme <nameofthemefolder>  
 spicetify config color_scheme <nameofcolorscheme>   
 spicetify apply
@@ -32,6 +57,7 @@ spicetify config current_theme
 
 APPLY EXTENSIONS
 spicetify config extensions <nameofextension.js> 
+
 **(if your file is .mjs and doesnt work after applying then rename it to .js)**
 
 ~~~~~~~~~~~~~~~~~
@@ -62,33 +88,10 @@ spicetify config custom_apps
 ~~~~~~~~~~~~~~~~~
 
 SPICETIFY RESET:
+spicetify config current_theme SpicetifyDefault
 spicetify restore
 spicetify backup
-spicetify config current_theme SpicetifyDefault
 spicetify apply
-
-~~~~~~~~~~~~~~~~~
-
-UNINSTALL SPICETIFY:
-spicetify restore backup apply
-
-Remove-Item "$env:APPDATA\spicetify" -Recurse -Force
-Remove-Item "$env:LOCALAPPDATA\spicetify" -Recurse -Force
-
-IF INSTALLED BY SCOOP:
-scoop uninstall spicetify
-
-TEST IF ITS GONE:
-spicetify
-
-~~~~~~~~~~~~~~~~~
-
-INSTALL SPICETIFY:
-iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
-
-then run
-
-spicetify backup apply
 
 ~~~~~~~~~~~~~~~~~
 
