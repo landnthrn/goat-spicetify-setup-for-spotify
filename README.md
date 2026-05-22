@@ -56,11 +56,12 @@ spicetify config current_theme <nameofthemefolder>
 spicetify apply
 ```
 
-### FORCE APPLY A MODIFIED COLOR SCHEME *(Might need to do for StarryNight)*
+- For themes that come with more than one color scheme like Starrynight, you should specifiy it in the apply command.
+  My modified Starrynight purple colorway uses color scheme `Base` so use the following:
 
 ```
-spicetify config current_theme <nameofthemefolder>  
-spicetify config color_scheme <nameofcolorschemefile>  
+spicetify config current_theme Starrynight 
+spicetify config color_scheme base
 spicetify apply
 ```
 
@@ -70,8 +71,8 @@ spicetify apply
 *Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
 
 
-The `waveform.js` extension is a custom extension from GitHub, it's no longer maintained and doesn't fully work. 
-There is another one like it in the Spicetify Marketplace, but it doesn't work on all themes so I suggest using this one.
+The `waveform.js` extension is a custom extension from GitHub, it's no longer maintained and doesn't work. 
+There is another one like it in the Spicetify Marketplace, but it doesn't work on all themes.
 Sucks that there isn't a playing audio wave visualizer extension that's maintained, if you find a better one please [inform me on Discord!!](https://discordapp.com/users/831735011588964392)
 
 - Place the `spicetify-waveform` folder and the `waveform.js` file into this location:  
