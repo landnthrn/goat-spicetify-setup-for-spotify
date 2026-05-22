@@ -16,8 +16,6 @@
 
 - Use all the commands listed in this guide in **PowerShell** *(no admin needed)*  
 
-- All versions of StarryNight might have a bug, may want to wait until it is properly fixed  
-
 - FYI the `zoomTheme.js` extension is just for the SpotifyDarkPurp Theme  
 
 ---
