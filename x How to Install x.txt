@@ -37,6 +37,8 @@ https://spicetify.app/docs/advanced-usage/installation
 
 HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
 
+— If you already have a marketplace setup of your own, export it first so it isn't lost.
+
 — Select the gear icon Spicetify Marketplace
 
 — Under Backup/Restore, press Open > Import From File  
