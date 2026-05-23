@@ -43,6 +43,7 @@ You can also check out their page:
 ---
 
 ### HOW TO APPLY MY SPICETIFY SETTINGS / SETUP
+**If you already have a marketplace setup of your own, export it first so it isn't lost.**
 
 - Select the gear icon **Spicetify Marketplace**
 
