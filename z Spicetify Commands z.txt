@@ -87,6 +87,11 @@ spicetify config custom_apps
 
 ~~~~~~~~~~~~~~~~~
 
+VIEW YOUR SPICETIFY CONFIGURMENT:
+spicetify config
+
+~~~~~~~~~~~~~~~~~
+
 SPICETIFY RESET:
 spicetify config current_theme SpicetifyDefault
 spicetify restore
