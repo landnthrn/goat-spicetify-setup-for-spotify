@@ -102,8 +102,6 @@ Plenty more can be found outside the marketplace, here's how those are installed
 
 *Use `Appdata\Roaming` locations for local file Custom Apps & Extensions, not `Appdata\Local`*
 
----
-
 #### EXTENSIONS
 
 - Place an Extension into this location:
@@ -117,8 +115,6 @@ C:\Users\%USERNAME%\AppData\Roaming\spicetify\Extensions
 ```powershell
 spicetify config extensions <nameofextensionfile.itsformat>
 ```
-
----
 
 #### CUSTOM APPS
 
